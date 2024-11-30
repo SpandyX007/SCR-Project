@@ -18,6 +18,6 @@ def student(request):
         except:
             #print("postexcept")
             #print(password==modelpassword.password_model)
-            return render(request,'studentdashboard.html',{'error':'Invalid Email-Id'})
+            return render(request,'studentdashboard.html',{'error':'Invalid Email-Id','title':'student'})
     print("normal")
     return render(request, 'student.html',param)
